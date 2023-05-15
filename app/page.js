@@ -5,7 +5,7 @@ import Footer from './Footer.js';
 import Header from "./Header.js";
 import { getCatFact } from './catFacts.js';
 import styles from './page.module.css';
-import Head from 'next/head';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 export default function Home() {
   const [catFact, setCatFact] = useState("");
@@ -19,9 +19,8 @@ export default function Home() {
     
       <main className={styles.main}>
         <Header />
-        <title>Computer Science Undergraduate Student, Toronto ON, Kevin Ho</title>
         <div className={styles.center}>
-        <p><h1>Hi there 👋!</h1></p>
+        <h1><p>Hi there 👋!</p></h1>
         </div>
         <div className={styles.center}>
           <div className={styles.imageContainer}>
@@ -34,10 +33,19 @@ export default function Home() {
             />
           </div>
           <p style={{ textAlign: 'center', marginTop: '0.2rem' }}>
-            Things are in motion, stay tuned... 
+            Things are in motion, stay tuned...
             <br />
             Here is a cat in the meantime!
+            <br></br>
           </p>
+          <div className={styles.iconContainer}>
+            <a href="https://www.linkedin.com/in/kevinhh/" target="_blank" rel="noopener noreferrer">
+              <FaLinkedin className={styles.icon} />
+            </a>
+            <a href="https://github.com/cskevhho" target="_blank" rel="noopener noreferrer">
+              <FaGithub className={styles.icon} />
+            </a>
+          </div>
           <Footer />
         </div>
       </main>

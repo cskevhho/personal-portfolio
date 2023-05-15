@@ -51,6 +51,18 @@
   margin-bottom: 2rem;
 }
 
+.iconContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.icon {
+  font-size: 2rem;
+  margin: 0 0.5rem;
+  color: #ffffff
+}
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
