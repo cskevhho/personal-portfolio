@@ -1,10 +1,11 @@
 "use client";
+import React, { useState } from 'react';
 import Image from 'next/image.js';
 import Footer from './Footer.js';
 import Header from "./Header.js";
-import React, { useState } from 'react';
 import { getCatFact } from './catFacts.js';
 import styles from './page.module.css';
+import Head from 'next/head';
 
 export default function Home() {
   const [catFact, setCatFact] = useState("");
@@ -15,11 +16,12 @@ export default function Home() {
   };
 
   return (
-    <client>
+    
       <main className={styles.main}>
         <Header />
+        <title>Computer Science Undergraduate Student, Toronto ON, Kevin Ho</title>
         <div className={styles.center}>
-          <h1>Hi there 👋!</h1>
+        <p><h1>Hi there 👋!</h1></p>
         </div>
         <div className={styles.center}>
           <div className={styles.imageContainer}>
@@ -39,6 +41,5 @@ export default function Home() {
           <Footer />
         </div>
       </main>
-    </client>
   );
 }

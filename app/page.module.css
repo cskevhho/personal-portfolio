@@ -38,10 +38,11 @@
   flex-direction: column;
   position: relative;
   padding: 4rem 0;
+  margin-top: -20rem;
 }
 
 .imageContainer {
-  margin-top: -10rem; /* Adjust this value as needed */
+  margin-top: -10rem; 
 }
 
 
